@@ -12,4 +12,4 @@ COPY src/available /app/sites/available/
 RUN mkdir /app/sites/enabled
 RUN ln -sf /app/sites/available/covid.conf /app/sites/enabled/covid.conf
 RUN ln -sf /app/sites/available/jenkins.conf /app/sites/enabled/jenkins.conf
-RUN ln -sf /app/sites/available/phpmyadmin.conf /app/sites/enabled/jenkins.conf
+RUN ln -sf /app/sites/available/phpmyadmin.conf /app/sites/enabled/phpmyadmin.conf
