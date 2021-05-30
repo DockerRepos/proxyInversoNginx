@@ -10,6 +10,6 @@ COPY src/available /app/sites/available/
 
 # SE GENERAN LOS ENLACES EN SITES-ENABLED
 RUN mkdir /app/sites/enabled
-RUN ln -s /app/sites/available/covid.conf /app/sites/enabled/covid.conf
-RUN ln -s /app/sites/available/jenkins.conf /app/sites/enabled/jenkins.conf
-RUN ln -a /app/sites/available/phpmyadmin.conf /app/sites/enabled/jenkins.conf
+RUN ln -sf /app/sites/available/covid.conf /app/sites/enabled/covid.conf
+RUN ln -sf /app/sites/available/jenkins.conf /app/sites/enabled/jenkins.conf
+RUN ln -sf /app/sites/available/phpmyadmin.conf /app/sites/enabled/jenkins.conf
