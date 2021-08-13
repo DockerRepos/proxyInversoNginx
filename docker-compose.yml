@@ -5,15 +5,17 @@ networks:
     external: true
 
 services:
-  proxy-inverso:
-    image: nginx-proxy-inverso:4
+  nginx:
+    image: nginx-proxy-inverso:7
+    restart: always
     networks:
       - proxy
+    ports:
+      - 80:80
+      - 443:443
     volumes:
       - proxy-inverso-sites:/app/sites/enabled
       - proxy-inverso-html:/usr/share/nginx/html    
-    ports:
-      - 8888:80
 
 # Definición de los volumenes
 volumes:
