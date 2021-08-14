@@ -1,0 +1,8 @@
+# CLAVES Y CERTIFICADOS
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+*.pem
+*.key
+secrets.txt
